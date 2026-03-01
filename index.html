@@ -453,16 +453,31 @@
   display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
 }
 .guide-actions .chip{ font-weight:900; }
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+}
   </style>
 </head>
 
 <body>
+  
   <div class="topbar">
     <div class="left">
       <button class="back" aria-label="ย้อนกลับ" onclick="go('home')">⟵</button>
       <h1 id="title">Maintenance</h1>
     </div>
-    <div class="right"></div>
+
+    <div class="right">
+      <a href="index.html">
+        <img src="images/swu.png" alt="Logo home" class="logo home">
+      </a>
+    </div>  
   </div>
 
   <main class="container">
@@ -1755,6 +1770,7 @@ function openUpdateFromModal(id){
   
 </body>
 </html>
+
 
 
 
